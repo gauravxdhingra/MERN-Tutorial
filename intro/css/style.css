@@ -2,8 +2,12 @@
     Property: value;
 } */
 
+*{
+    text-align:right;
+}
+
 body{
-    background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.8b2a58cb.jpeg") ;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-white-background-vector-id1143662580?b=1&k=6&m=1143662580&s=612x612&w=0&h=nHS1tx7rQOvyFnYh9Iwfd39Q2wctjNPNK6YjYhBEykY=") ;
 background-size: cover;
 }
 
@@ -14,11 +18,91 @@ h2,p{
     cursor: pointer;
 }
 
-p{
-    color:black;
+/* Space: All <p's> inside <h2>
+/* Attribute Attribute */
+/*h2 p{
+    color:#A00F00;
+    text-align: center;
+    border: 5px solid rgba(255,176,178, 0.5);
+    cursor: pointer;
+} */
+
+/* Greater: <h2> Immediate Parent <p's>
+/* Attribute > Attribute */
+/*h2 > p{
+    color:#A00F00;
+    text-align: center;
+    border: 5px solid rgba(255,176,178, 0.5);
+    cursor: pointer;
+} */
+
+/* Plus: <h2> Immediate After Inline <p's>
+/* Attribute + Attribute */
+/*h2 + p{
+    color:#A00F00;
+    text-align: center;
+    border: 5px solid rgba(255,176,178, 0.5);
+    cursor: pointer;
+} */
+
+
+p:hover{
+    color:black !important;
+    font-size:"25px"
 }
+/* mark "!important" for breaking heirarchy */
 
 li{
     list-style: none;
     display: inline-block;
 }
+
+.webtext:last-child{
+    border: 5px dashed green;
+}
+/* Or First Child */
+
+.active{
+    color:red;
+}
+
+#div1{
+    background:rgba(0,0,255,0.2);
+    font-family: 'Dancing Script', cursive;
+    /* Google Form from online css link */
+}
+
+#div2{
+    background:rgba(255,0,0,0.5)
+}
+
+img{
+    float: right;
+}
+
+footer{
+    clear: both;
+    text-align:center;
+}
+
+/* 
+.class
+#id
+*
+element
+element, element
+element element
+element > element
+element + element
+:hover
+:last-child
+:first-child
+!important (not recommended)
+
+
+What seletors win out in the cascade depends on: */
+/* Heirarchy */
+
+/* Specificity
+Importance
+Order */
