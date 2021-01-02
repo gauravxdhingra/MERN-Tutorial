@@ -2,10 +2,28 @@ body{
     font-family: Montserrat;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-weight: 700;
+}
+
+p{
+    color: #8F8F8F;
+}
+
 #title {
     background-color: #FF4C68;
     
     color: white;
+}
+
+#features{
+    padding:7% 15%;
 }
 
 .tagline{
@@ -46,4 +64,43 @@ body{
 .title-image{
     width: 60%;
     transform: rotate(25deg);
+}
+
+.feature-box{
+    text-align: center;
+    padding:5%;
+}
+
+.feature-icon{
+    color: #EF8172;
+    margin-bottom: 1rem;
+}
+
+.feature-icon:hover{
+    color: #FF4C68;
+}
+
+#testimonials{
+    background-color: #EF8172;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+    
+}
+
+.testimonial-img{
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+
+#press{
+    background-color: #EF8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
 }
